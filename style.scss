@@ -18,7 +18,7 @@ html {
     padding: 20px;
 }
 
-#noother1 {
+.noother {
     padding: 20px;
     margin-bottom: 50px;
 
@@ -42,12 +42,10 @@ html {
     }
 }
 
-
-
-
 h2 {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 800;
+    margin: 0px;
 }
 
 .sign_up_link {
@@ -85,13 +83,6 @@ h2 {
     }
 }
 
-
-
-
-// .griditem {
-//     border-color: solid 2 px red;
-// }
-
 .early-bird {
     //height: 300px;
     background: linear-gradient(to right, rgb(246, 98, 98), rgb(244, 146, 81), rgb(188, 188, 93));
@@ -103,12 +94,14 @@ h2 {
 h3 {
     font-size: 2em;
     font-weight: 400;
-
     padding-top: 50px;
     ;
 }
 
 .logos {
+
+    padding: 20px;
+    padding-top: 50px;
     display: grid;
     grid-template-columns: repeat(2, 170px);
     grid-template-rows: repeat(2, 50px);
@@ -116,21 +109,54 @@ h3 {
 
     justify-content: space-evenly;
 
-    border: 1px solid black;
-
-    .img {
-        border-color: solid 2 px red;
-        ;
+    img {
+        width: 170px;
+        height: 50px;
+        object-fit: contain;
+        object-position: left;
     }
+
+
 }
 
+.not_important {
+    display: none;
+}
+
+#auction {
+    font-size: 1.5em;
+    padding: 20px;
+
+}
+
+.launching_soon {
+    color: pink;
+    font-weight: 800;
+}
+
+.noother2 {
+    padding: 20px;
+    margin-bottom: 50px;
+
+    .align2 {
+        width: 60%;
+        font-size: 1.5em;
+
+    }
+
+    img {
+
+        float: right;
+        overflow: hidden;
+        object-fit: cover;
+        object-position: left;
+        width: 180px;
+        height: 500px;
 
 
-
-// #footer_menu {
-//     display: flex;
-//     justify-content: space-between;
-// }
+        padding: 0px;
+    }
+}
 
 .footer2 {
     display: grid;
