@@ -14,21 +14,27 @@
 
 .logos {
     display: grid;
-    grid-template-columns: repeat(2, 150px);
+    grid-template-columns: repeat(2, 170px);
     grid-template-rows: repeat(2, 50px);
     gap: 20px 50px;
 
     justify-content: space-evenly;
 
+    border: 1px solid black; // try border-left and border-right
+
     .img {
-        width: 150px;
-        height: 50px;
-        object-fit: cover;
+        border-color: solid 2 px red;
+        ;
     }
 }
 
+.griditem {
+    border-color: solid 2 px red;
+}
+
 .early-bird {
-    background-color: aqua;
+    background-image: url(./background.svg);
+    background-size: 100% 100%;
 }
 
 // #footer_menu {
