@@ -30,3 +30,16 @@
 .early-bird {
     background-color: aqua;
 }
+
+// #footer_menu {
+//     display: flex;
+//     justify-content: space-between;
+// }
+
+.footer2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    justify-content: space-evenly;
+}
