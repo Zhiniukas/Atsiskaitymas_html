@@ -11,11 +11,18 @@
   padding: 20px;
 }
 
-#logos {
+.logos {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 150px);
+  grid-template-rows: repeat(2, 50px);
   gap: 20px 50px;
+  justify-content: space-evenly;
+}
+.logos .img {
+  width: 150px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .early-bird {
