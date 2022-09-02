@@ -14,18 +14,24 @@
 
 <body>
     <div id="wrapper">
-        <header>1
-            <div id="main">
-                <img src="./logo.svg" alt="NFT landing logo">
-
-                <div id="menu">
-                    <h3>Menu</h3>
-                    <p>Features</p>
-                    <p>About</p>
-                    <p>Launch</p>
-                    <p id="sign_up">Sign Up</p>
-                </div>
+        <header>
+            <img src="./logo.svg" alt="NFT landing logo">
         </header>
+
+        <nav id="menu">
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger" />
+
+            <div id="menuitems">
+
+                <a href="#">Features</a>
+                <a href="#">About</a>
+                <a href="#">Launch</a>
+                <a href="#">Sign Up</a>
+
+            </div>
+        </nav>
+
         <div class="noother">
 
             <img src="./graphic.png" alt="">
@@ -57,7 +63,24 @@
             <div>We have released four limited edition NFTs early which can be bid on via <a
                     href="https://www.open.sea">OpenSea</a></div>
             <div id="nft_list">
-                <div>NFT1</div>
+                <div class="nftitem">
+                    <img src="./nfts/nft-1.svg" alt="Item 1 image">
+                    <div class="nftbox">
+                        <div class="nftseries">GLOOP SERIES</div>
+
+                        <div class="nfttopbid">TOP BID</div>
+                        <div class="nftname">Purple Man</div>
+                        <div class="nftbidammount">
+                            <img src="eth.svg" alt="ETH icon">
+                            3.45 ETH
+                        </div>
+                        <div class="nftid">#12983</div>
+                        <div class="nfttimeleft">1 day left</div>
+
+                    </div>
+
+                </div>
+
                 <div>NFT1</div>
                 <div>NFT1</div>
                 <div>NFT1</div>
