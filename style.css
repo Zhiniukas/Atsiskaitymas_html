@@ -79,6 +79,10 @@ h2 {
   border: solid transparent;
   border-radius: 60px;
 }
+.sign_up_link a {
+  text-decoration: none;
+  color: black;
+}
 .sign_up_link:before {
   content: "";
   position: absolute;
@@ -214,6 +218,10 @@ h3 {
 footer {
   color: gray;
   padding: 20px;
+}
+footer a {
+  text-decoration: none;
+  color: gray;
 }
 
 .footer1 {
