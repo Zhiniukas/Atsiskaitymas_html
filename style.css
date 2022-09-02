@@ -5,10 +5,7 @@ html {
 }
 
 #wrapper {
-  width: 428px;
-  margin: auto;
-  border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  min-width: 400px;
 }
 
 #main {
@@ -28,15 +25,9 @@ html {
 }
 .noother img {
   float: right;
-  overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: left;
-     object-position: left;
-  width: 200px;
+  width: 400px;
   height: 400px;
-  margin: -100px -21px 0px -200px;
-  padding: 0px;
+  margin: -100px -150px 0px -100px;
 }
 
 h2 {
@@ -46,7 +37,7 @@ h2 {
 }
 
 .sign_up_link {
-  width: 50%;
+  width: 250px;
   max-width: 22em;
   text-align: center;
   font-size: 2em;
@@ -90,18 +81,9 @@ h3 {
   padding: 20px;
   padding-top: 50px;
   display: grid;
-  grid-template-columns: repeat(2, 170px);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 50px);
   gap: 20px 50px;
-  justify-content: space-evenly;
-}
-.logos img {
-  width: 170px;
-  height: 50px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: left;
-     object-position: left;
 }
 
 .not_important {
@@ -128,21 +110,36 @@ h3 {
 }
 .noother2 img {
   float: right;
-  overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: left;
-     object-position: left;
-  width: 180px;
+  width: 500px;
   height: 500px;
-  padding: 0px;
+  margin: -50px -150px 0px -100px;
+}
+
+footer {
+  color: gray;
+  padding: 20px;
+}
+
+.footer1 {
+  font-size: 1.5em;
+}
+.footer1 img {
+  width: 20px;
+  opacity: 50%;
+}
+
+.soc_media {
+  color: gray;
+  opacity: 80%;
 }
 
 .footer2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  justify-content: space-evenly;
+  gap: 20px 20px;
+  padding-top: 50px;
+  color: gray;
 }
 
 .footer3 {
