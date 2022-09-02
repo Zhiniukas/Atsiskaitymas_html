@@ -1,3 +1,309 @@
 html {
-  background-color: beige;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  margin: auto;
+}
+
+#wrapper {
+  padding: 5%;
+}
+
+header {
+  min-height: 100px;
+  padding: 30px;
+  padding-top: 0;
+}
+
+#menu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+#menuitems {
+  display: flex;
+  justify-content: space-around;
+}
+
+#menuitems a {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 10px;
+  color: gray;
+  text-decoration: none;
+  text-align: center;
+  background: white;
+}
+
+#menuitems a:hover {
+  background: lightgrey;
+}
+
+#menu label,
+#hamburger {
+  display: none;
+}
+
+.noother {
+  padding: 20px;
+  margin-bottom: 50px;
+}
+.noother .align1 {
+  font-size: 1.5em;
+}
+.noother img {
+  float: right;
+  width: 400px;
+  height: 400px;
+  margin: -100px -150px 0px -100px;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 800;
+  margin: 0px;
+}
+
+.sign_up_link {
+  width: 250px;
+  max-width: 22em;
+  text-align: center;
+  font-size: 2em;
+  position: relative;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #FFF;
+  background: white;
+  background-clip: padding-box;
+  border: solid transparent;
+  border-radius: 60px;
+}
+.sign_up_link a {
+  text-decoration: none;
+  color: black;
+}
+.sign_up_link:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -5px;
+  border-radius: inherit;
+  background: linear-gradient(45deg, red, rgb(255, 50, 0), rgb(255, 100, 0), rgb(255, 160, 0), rgb(205, 200, 0));
+}
+
+.early-bird {
+  background: linear-gradient(to right, rgb(246, 98, 98), rgb(244, 146, 81), rgb(188, 188, 93));
+  font-size: 1.5em;
+  padding: 20px;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: 400;
+  padding-top: 50px;
+}
+
+.logos {
+  padding: 20px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px 50px;
+}
+
+.not_important {
+  display: contents;
+}
+
+#auction {
+  font-size: 1.5em;
+  padding: 20px;
+}
+#auction a {
+  color: black;
+}
+
+.nftlist {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.nftitem {
+  display: block;
+  width: 290px;
+  height: 420px;
+  background-color: rgb(223, 222, 222);
+  border-radius: 20px;
+  color: rgb(90, 90, 90);
+  margin: 30px;
+}
+.nftitem .nftbox {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 35px);
+  padding: 20px;
+  margin: auto;
+}
+.nftitem .nftseries {
+  color: orange;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.nftitem .nfttopbid {
+  font-size: 13px;
+  font-weight: 500;
+  justify-content: right;
+  display: flex;
+  align-items: center;
+}
+.nftitem .nftname {
+  font-weight: 600;
+  font-size: 20px;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+.nftitem .nftbidammount {
+  font-weight: 600;
+  font-size: 20px;
+  color: black;
+  justify-content: right;
+  display: flex;
+  align-items: center;
+}
+.nftitem .nftbidammount img {
+  padding-right: 5px;
+}
+.nftitem .nftid {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+.nftitem .nfttimeleft {
+  font-size: 20px;
+  justify-content: right;
+  display: flex;
+  align-items: center;
+}
+
+.launching_soon {
+  color: rgb(248, 87, 114);
+  font-weight: 700;
+}
+
+.noother2 {
+  padding: 20px;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+.noother2 .align2 {
+  font-size: 1.5em;
+}
+.noother2 img {
+  float: right;
+  width: 350px;
+  height: 350px;
+  margin: -50px -150px 0px -100px;
+}
+
+footer {
+  color: gray;
+  padding: 20px;
+}
+footer a {
+  text-decoration: none;
+  color: gray;
+}
+
+.footer1 {
+  font-size: 1.5em;
+}
+
+.soc_media {
+  color: gray;
+  opacity: 80%;
+}
+.soc_media img {
+  width: 20px;
+  opacity: 50%;
+}
+
+#footer_menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.footer2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px 20px;
+  color: gray;
+}
+
+.footer3 {
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-start;
+  padding: 20px;
+}
+
+.horizontal-border {
+  border-bottom: 1px solid rgb(184, 184, 184);
+}
+
+@media screen and (max-width: 768px) {
+  #menuitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid gray;
+  }
+  #menu label {
+    display: block;
+    text-align: right;
+    color: gray;
+    background: white;
+    font-style: normal;
+    font-size: 2em;
+    padding: 10px;
+  }
+  #menuitems {
+    display: none;
+  }
+  #menu input:checked ~ #menuitems {
+    display: block;
+  }
+  .not_important {
+    display: none;
+  }
+  .logos {
+    padding: 20px;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 50px);
+    gap: 20px 50px;
+  }
+  .footermenu {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px 20px;
+    color: gray;
+  }
 }/*# sourceMappingURL=style.css.map */
