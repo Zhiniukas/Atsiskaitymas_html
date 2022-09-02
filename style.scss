@@ -46,61 +46,64 @@ header {
 }
 
 .noother {
+    display: flex;
     padding: 20px;
-    margin-bottom: 50px;
+    padding-bottom: 0%;
+
 
     .align1 {
-        // width: 75%;
         font-size: 1.5em;
     }
 
+    h2 {
+        font-size: 50px;
+        font-weight: 800;
+        margin: 0px;
+    }
+
+    .sign_up_link {
+        width: 250px;
+        max-width: 22em;
+        text-align: center;
+        font-size: 2em;
+        position: relative;
+        padding: 20px;
+        box-sizing: border-box;
+        $border: 5px;
+        color: #FFF;
+        background: white;
+        background-clip: padding-box;
+        border: solid transparent;
+        border-radius: 60px;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            margin: -$border;
+            border-radius: inherit;
+            background: linear-gradient(45deg, red, rgb(255, 50, 0), rgb(255, 100, 0), rgb(255, 160, 0), rgb(205, 200, 0))
+        }
+    }
+}
+
+.doll {
+
     img {
-        float: right;
-        width: 400px;
-        height: 400px;
-        margin: -100px -150px 0px -100px;
+        width: 500px;
+        height: 500px;
     }
 }
 
-h2 {
-    font-size: 50px;
-    font-weight: 800;
-    margin: 0px;
-}
-
-.sign_up_link {
-    width: 250px;
-    max-width: 22em;
-    text-align: center;
-    font-size: 2em;
-    position: relative;
-    padding: 20px;
-    box-sizing: border-box;
-    $border: 5px;
-    color: #FFF;
-    background: white;
-    background-clip: padding-box;
-    border: solid transparent;
-    border-radius: 60px;
-
-    a {
-        text-decoration: none;
-        color: black;
-    }
-
-    &:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: -1;
-        margin: -$border;
-        border-radius: inherit;
-        background: linear-gradient(45deg, red, rgb(255, 50, 0), rgb(255, 100, 0), rgb(255, 160, 0), rgb(205, 200, 0))
-    }
-}
 
 .early-bird {
     background: linear-gradient(to right, rgb(246, 98, 98), rgb(244, 146, 81), rgb(188, 188, 93));
@@ -215,27 +218,12 @@ h3 {
     font-weight: 700;
 }
 
-.noother2 {
-    padding: 20px;
-    padding-top: 50px;
-    margin-bottom: 50px;
 
-    .align2 {
-
-        font-size: 1.5em;
-    }
-
-    img {
-        float: right;
-        width: 350px;
-        height: 350px;
-        margin: -50px -150px 0px -100px;
-    }
-}
 
 footer {
     color: gray;
     padding: 20px;
+    padding-top: 50px;
 
     a {
         text-decoration: none;
@@ -276,7 +264,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-self: flex-start;
-    padding: 20px;
 }
 
 .horizontal-border {

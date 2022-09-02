@@ -46,26 +46,19 @@ header {
 }
 
 .noother {
+  display: flex;
   padding: 20px;
-  margin-bottom: 50px;
+  padding-bottom: 0%;
 }
 .noother .align1 {
   font-size: 1.5em;
 }
-.noother img {
-  float: right;
-  width: 400px;
-  height: 400px;
-  margin: -100px -150px 0px -100px;
-}
-
-h2 {
+.noother h2 {
   font-size: 50px;
   font-weight: 800;
   margin: 0px;
 }
-
-.sign_up_link {
+.noother .sign_up_link {
   width: 250px;
   max-width: 22em;
   text-align: center;
@@ -79,11 +72,11 @@ h2 {
   border: solid transparent;
   border-radius: 60px;
 }
-.sign_up_link a {
+.noother .sign_up_link a {
   text-decoration: none;
   color: black;
 }
-.sign_up_link:before {
+.noother .sign_up_link:before {
   content: "";
   position: absolute;
   top: 0;
@@ -94,6 +87,11 @@ h2 {
   margin: -5px;
   border-radius: inherit;
   background: linear-gradient(45deg, red, rgb(255, 50, 0), rgb(255, 100, 0), rgb(255, 160, 0), rgb(205, 200, 0));
+}
+
+.doll img {
+  width: 500px;
+  height: 500px;
 }
 
 .early-bird {
@@ -200,24 +198,10 @@ h3 {
   font-weight: 700;
 }
 
-.noother2 {
-  padding: 20px;
-  padding-top: 50px;
-  margin-bottom: 50px;
-}
-.noother2 .align2 {
-  font-size: 1.5em;
-}
-.noother2 img {
-  float: right;
-  width: 350px;
-  height: 350px;
-  margin: -50px -150px 0px -100px;
-}
-
 footer {
   color: gray;
   padding: 20px;
+  padding-top: 50px;
 }
 footer a {
   text-decoration: none;
@@ -255,7 +239,6 @@ footer a {
   display: flex;
   justify-content: space-between;
   align-self: flex-start;
-  padding: 20px;
 }
 
 .horizontal-border {
