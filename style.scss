@@ -5,6 +5,7 @@ html {
 
 #wrapper {
     padding: 5%;
+    overflow-x: hidden;
 }
 
 header {
@@ -143,6 +144,7 @@ h3 {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
+    overflow-x: auto;
 }
 
 .nftitem {
